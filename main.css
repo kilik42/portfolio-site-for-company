@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --light:#f15025;
+  --dark: #181B24;
+  --grey:#899495;
+  --orange: #fc5130;
+  --SectionGrey: #f2f2f2;
+  --SectionWhite: #fff;
+
+
+}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+
+}
+/* nav */
+.nav{
+  background: var(--light);
+}
+/* end of nav */
+
+/* header */
+.header{
+  min-height: 100vh;
+  background: linear-gradient(rgba(255,255,255, 0.3), rgba(255,255,255,0.3)),url("./images/business-computer-connection-450035.jpg");
+  /* background: linear-gradient(rgba(255,255,255, 0.3), rgba(255,255,255,0.3)); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction:column;
+
+
+}
+/* end of header */
+
+/* banner */
+.banner{
+/*   as a flex child */
+flex: 1 0 auto;
+/* as a parent */
+display: flex;
+justify-content:center;
+align-items: flex-end;
+color: var(--dark);
+text-align:center;
+padding-bottom: 4rem;
+font-weight: 700;
+}
+
+
+
+
+.banner__title{
+  font-size: 4rem;
+  letter-spacing:0.1rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  text-transform: capitalize;
+
+}
+
+
+.banner__jobs{
+  letter-spacing: 0.15rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--light);
+}
+ /* end of banner */
+
+ /* about section */
+.about{
+  padding: 2rem 0;
+  background: var(--SectionWhite);
+}
+
+.about__center{
+  max-width: 90vw;
+  margin: 2rem auto;
+}
+.about-img{
+  margin: 3rem 0;
+  position: relative;
+}
+.about-img__photo{
+  display: block;
+  width: 100%;
+  height:100%;
+  position: relative;
+}
+
+.about-img:before{
+  content: "";
+  background: var(--grey);
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+
+}
+
+
+.about-info{
+  margin: 3rem 0;
+
+}
+
+
+.about-info__title{
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 05rem;
+  background: url('./images/architectural-design-architecture-buildings-830891.jpg');
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.about-info__text{
+  color: var(--grey);
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+
+.about-info__single{
+  display:inline-block;
+}
+/* 1:48:18 */
+
+
+ /* end of about section */
