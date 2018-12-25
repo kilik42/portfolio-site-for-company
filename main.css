@@ -137,8 +137,14 @@ font-weight: 700;
 
 .about-info__single{
   display:inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  border: 3px solid var(--dark);
 }
-/* 1:48:18 */
+
 
 
  /* end of about section */
